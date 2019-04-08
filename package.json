@@ -1,0 +1,33 @@
+{
+  "name": "brain-games-s478",
+  "version": "1.0.0",
+  "description": "Tutorial project 1",
+  "main": "src/bin/brain-games.js",
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonytoponi/project-lvl1-s478.git"
+  },
+  "author": "Anton Zhilkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonytoponi/project-lvl1-s478/issues"
+  },
+  "homepage": "https://github.com/tonytoponi/project-lvl1-s478#readme",
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3"
+  }
+}
