@@ -5,4 +5,7 @@ How to launch brain-even game
 
 How to launch brain-calc game
 [![asciicast](https://asciinema.org/a/JSFxLJnfZtIV3hH45XHgmOSe4.svg)](https://asciinema.org/a/JSFxLJnfZtIV3hH45XHgmOSe4)
+
+How to launch brain-gcd game
+[![asciicast](https://asciinema.org/a/60c7lGUIqJWwM2zRZ9SCkRVNc.svg)](https://asciinema.org/a/60c7lGUIqJWwM2zRZ9SCkRVNc)
    
