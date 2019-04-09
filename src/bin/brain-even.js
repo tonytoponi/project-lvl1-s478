@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
-import { greetingEven } from '..';
+import greeting from '..';
+import startGame from '../startGame';
+import evenCheck from '../games/evenCheck';
 
-greetingEven();
+greeting('Answer "yes" if number even otherwise answer "no".');
+startGame(evenCheck);
