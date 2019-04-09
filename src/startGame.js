@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 
-export default (gameType) => {
+export default (gameType, rule) => {
+  console.log(`${rule}\n`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}\n`);
   if (gameType === '') {
