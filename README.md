@@ -8,4 +8,7 @@ How to launch brain-calc game
 
 How to launch brain-gcd game
 [![asciicast](https://asciinema.org/a/60c7lGUIqJWwM2zRZ9SCkRVNc.svg)](https://asciinema.org/a/60c7lGUIqJWwM2zRZ9SCkRVNc)
+
+How to launch brain-progression game
+[![asciicast](https://asciinema.org/a/I2WnonjnZ6cast2VrUYAHeeOx.svg)](https://asciinema.org/a/I2WnonjnZ6cast2VrUYAHeeOx)
    
