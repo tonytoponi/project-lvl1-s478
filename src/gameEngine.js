@@ -9,12 +9,12 @@ const greetUser = (rule) => {
   return name;
 };
 
-const showSuccessMessage = (answer, correctAnswer, name) => {
+const showFailMessage = (answer, correctAnswer, name) => {
   console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
   console.log(`Let's try again, ${name}!`);
 };
 
-const showFailMessage = () => console.log('Correct!');
+const showSuccessMessage = () => console.log('Correct!');
 
 const askQuestion = (question) => {
   console.log(`Question: ${question}`);

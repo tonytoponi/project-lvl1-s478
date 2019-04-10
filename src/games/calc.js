@@ -25,11 +25,11 @@ const startCalcGame = () => {
   const calculate = car(operator);
   const operatorSign = cdr(operator);
   const question = `${value1} ${operatorSign} ${value2}`;
-  const correctAnswer = calculate(value1, value2);
+  const correctAnswer = calculate(value1, value2).toString();
   const gameData = cons(question, correctAnswer);
   return gameData;
 };
 
 export default () => {
-  gameEngine(startCalcGame, 'Answer "yes" if number even otherwise answer "no".');
+  gameEngine(startCalcGame, 'What is the result of the expression?');
 };
