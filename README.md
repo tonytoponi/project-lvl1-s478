@@ -11,4 +11,6 @@ How to launch brain-gcd game
 
 How to launch brain-progression game
 [![asciicast](https://asciinema.org/a/I2WnonjnZ6cast2VrUYAHeeOx.svg)](https://asciinema.org/a/I2WnonjnZ6cast2VrUYAHeeOx)
-   
+
+How to launch brain-prime game
+[![asciicast](https://asciinema.org/a/4QJloPVJbxpG7lEMgXHwlCE7r.svg)](https://asciinema.org/a/4QJloPVJbxpG7lEMgXHwlCE7r)
