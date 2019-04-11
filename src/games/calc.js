@@ -3,7 +3,7 @@ import gameEngine from '../gameEngine';
 import getRandomNumber from '../getRandomNumber';
 
 const getRandomOperator = () => {
-  const signSelector = getRandomNumber(1, 4);
+  const signSelector = getRandomNumber(0, 3);
   const operators = [cons((a, b) => a + b, '+'), cons((a, b) => a - b, '-'), cons((a, b) => a * b, '*'), cons((a, b) => a / b, '/')];
   return operators[signSelector];
 };
