@@ -3,22 +3,12 @@ import gameEngine from '../gameEngine';
 import getRandomNumber from '../getRandomNumber';
 
 const getRandomOperator = () => {
-  const sign = getRandomNumber(1, 4);
-  switch (sign) {
-    case 1:
-      return cons((a, b) => a + b, '+');
-    case 2:
-      return cons((a, b) => a - b, '-');
-    case 3:
-      return cons((a, b) => a * b, '*');
-    case 4:
-      return cons((a, b) => a / b, '/');
-    default:
-      return 0;
-  }
+  const signSelector = getRandomNumber(0, 3);
+  const operators = [cons((a, b) => a + b, '+'), cons((a, b) => a - b, '-'), cons((a, b) => a * b, '*'), cons((a, b) => a / b, '/')];
+  return operators[signSelector];
 };
 
-const startCalcGame = () => {
+const getCalcGameData = () => {
   const value1 = getRandomNumber(0, 10);
   const value2 = getRandomNumber(0, 10);
   const operator = getRandomOperator();
@@ -31,5 +21,6 @@ const startCalcGame = () => {
 };
 
 export default () => {
-  gameEngine(startCalcGame, 'What is the result of the expression?');
+  const calcGameRules = 'What is the result of the expression?';
+  gameEngine(getCalcGameData, calcGameRules);
 };
