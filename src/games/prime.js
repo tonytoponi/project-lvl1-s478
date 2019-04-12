@@ -3,6 +3,9 @@ import gameEngine from '../gameEngine';
 import getRandomNumber from '../getRandomNumber';
 
 const isPrime = (num) => {
+  if (num === 2) {
+    return true;
+  }
   const iterator = (acc) => {
     if (num % acc === 0) {
       return false;
