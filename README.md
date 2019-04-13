@@ -4,7 +4,8 @@ How to install games
 npm install -g brain-games-s478
 
 How to launch brain-even game
-brain-even
+
+`brain-even`
 [![asciicast](https://asciinema.org/a/oPJrycE0BWd3viUJYbBVjhCd0.svg)](https://asciinema.org/a/oPJrycE0BWd3viUJYbBVjhCd0)
 
 How to launch brain-calc game
