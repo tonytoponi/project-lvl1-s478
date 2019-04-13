@@ -11,17 +11,25 @@ How to launch brain-even game
 [![asciicast](https://asciinema.org/a/oPJrycE0BWd3viUJYbBVjhCd0.svg)](https://asciinema.org/a/oPJrycE0BWd3viUJYbBVjhCd0)
 
 How to launch brain-calc game
-brain-calc
+
+`brain-calc`
+
 [![asciicast](https://asciinema.org/a/JSFxLJnfZtIV3hH45XHgmOSe4.svg)](https://asciinema.org/a/JSFxLJnfZtIV3hH45XHgmOSe4)
 
 How to launch brain-gcd game
-brain-gcd
+
+`brain-gcd`
+
 [![asciicast](https://asciinema.org/a/60c7lGUIqJWwM2zRZ9SCkRVNc.svg)](https://asciinema.org/a/60c7lGUIqJWwM2zRZ9SCkRVNc)
 
 How to launch brain-progression game
-brain-progression
+
+`brain-progression`
+
 [![asciicast](https://asciinema.org/a/I2WnonjnZ6cast2VrUYAHeeOx.svg)](https://asciinema.org/a/I2WnonjnZ6cast2VrUYAHeeOx)
 
 How to launch brain-prime game
-brain-prime
+
+`brain-prime`
+
 [![asciicast](https://asciinema.org/a/4QJloPVJbxpG7lEMgXHwlCE7r.svg)](https://asciinema.org/a/4QJloPVJbxpG7lEMgXHwlCE7r)
