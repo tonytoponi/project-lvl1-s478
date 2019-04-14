@@ -1,6 +1,6 @@
 {
   "name": "brain-games-s478",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Tutorial project 1",
   "keywords": [
     "brain-games",
@@ -44,7 +44,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.16.0"
   }
 }
