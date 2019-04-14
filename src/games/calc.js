@@ -9,8 +9,7 @@ const operators = [
   cons((a, b) => a / b, '/')];
 
 const getRandomOperator = () => {
-  const maxIndex = 3;
-  const signSelector = getRandom(0, maxIndex);
+  const signSelector = getRandom(0, operators.length - 1);
   return operators[signSelector];
 };
 
