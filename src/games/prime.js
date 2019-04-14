@@ -1,10 +1,13 @@
 import { cons } from 'hexlet-pairs';
 import gameEngine from '../gameEngine';
-import getRandomNumber from '../getRandomNumber';
+import getRandom from '../getRandom';
 
 const isPrime = (num) => {
   if (num === 2) {
     return true;
+  }
+  if (num < 2) {
+    return false;
   }
   const iterator = (acc) => {
     if (num % acc === 0) {
@@ -19,13 +22,12 @@ const isPrime = (num) => {
 };
 
 const getPrimeGameData = () => {
-  const question = getRandomNumber(0, 100);
+  const question = getRandom(-5, 20);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  const gameData = cons(question, correctAnswer);
-  return gameData;
+  return cons(question, correctAnswer);
 };
 
 export default () => {
-  const evenGameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  gameEngine(getPrimeGameData, evenGameRules);
+  const primeGameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  gameEngine(getPrimeGameData, primeGameDescription);
 };

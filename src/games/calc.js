@@ -1,26 +1,31 @@
 import { cons, car, cdr } from 'hexlet-pairs';
 import gameEngine from '../gameEngine';
-import getRandomNumber from '../getRandomNumber';
+import getRandom from '../getRandom';
+
+const operators = [
+  cons((a, b) => a + b, '+'),
+  cons((a, b) => a - b, '-'),
+  cons((a, b) => a * b, '*'),
+  cons((a, b) => a / b, '/')];
 
 const getRandomOperator = () => {
-  const signSelector = getRandomNumber(0, 3);
-  const operators = [cons((a, b) => a + b, '+'), cons((a, b) => a - b, '-'), cons((a, b) => a * b, '*'), cons((a, b) => a / b, '/')];
+  const maxIndex = 3;
+  const signSelector = getRandom(0, maxIndex);
   return operators[signSelector];
 };
 
 const getCalcGameData = () => {
-  const value1 = getRandomNumber(0, 10);
-  const value2 = getRandomNumber(0, 10);
-  const operator = getRandomOperator();
-  const calculate = car(operator);
-  const operatorSign = cdr(operator);
-  const question = `${value1} ${operatorSign} ${value2}`;
+  const value1 = getRandom(0, 10);
+  const value2 = getRandom(0, 10);
+  const operatorData = getRandomOperator();
+  const calculate = car(operatorData);
+  const operator = cdr(operatorData);
+  const question = `${value1} ${operator} ${value2}`;
   const correctAnswer = calculate(value1, value2).toString();
-  const gameData = cons(question, correctAnswer);
-  return gameData;
+  return cons(question, correctAnswer);
 };
 
 export default () => {
-  const calcGameRules = 'What is the result of the expression?';
-  gameEngine(getCalcGameData, calcGameRules);
+  const calcGameDescription = 'What is the result of the expression?';
+  gameEngine(getCalcGameData, calcGameDescription);
 };

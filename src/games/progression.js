@@ -1,17 +1,17 @@
 import { cons } from 'hexlet-pairs';
 import gameEngine from '../gameEngine';
-import getRandomNumber from '../getRandomNumber';
+import getRandom from '../getRandom';
 
 const progressionLength = 10;
 
 const calculateProgressionElement = (start, diff, miltipler) => start + diff * miltipler;
 
-const generateProgression = (start, diff, guessPosition) => {
+const generateProgressionWithHiddenElement = (start, diff, hiddenElement) => {
   const iterator = (acc, currentPosition) => {
     if (currentPosition > progressionLength) {
       return acc;
     }
-    if (currentPosition === guessPosition) {
+    if (currentPosition === hiddenElement) {
       return iterator(`${acc} ..`, currentPosition + 1);
     }
     const value = calculateProgressionElement(start, diff, currentPosition);
@@ -21,16 +21,15 @@ const generateProgression = (start, diff, guessPosition) => {
 };
 
 const getProgressionGameData = () => {
-  const start = getRandomNumber(0, 5);
-  const diff = getRandomNumber(1, 5);
-  const guessPosition = getRandomNumber(1, 10);
-  const question = generateProgression(start, diff, guessPosition);
-  const correctAnswer = calculateProgressionElement(start, diff, guessPosition).toString();
-  const gameData = cons(question, correctAnswer);
-  return gameData;
+  const start = getRandom(0, 5);
+  const diff = getRandom(1, 5);
+  const hiddenElement = getRandom(1, progressionLength);
+  const question = generateProgressionWithHiddenElement(start, diff, hiddenElement);
+  const correctAnswer = calculateProgressionElement(start, diff, hiddenElement).toString();
+  return cons(question, correctAnswer);
 };
 
 export default () => {
-  const progressionGameRules = 'What number is missing in the progression?';
-  gameEngine(getProgressionGameData, progressionGameRules);
+  const progressionGameDescription = 'What number is missing in the progression?';
+  gameEngine(getProgressionGameData, progressionGameDescription);
 };
