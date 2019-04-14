@@ -1,6 +1,6 @@
 {
   "name": "brain-games-s478",
-  "version": "2.3.0",
+  "version": "2.3.2",
   "description": "Tutorial project 1",
   "keywords": [
     "brain-games",
@@ -33,6 +33,10 @@
   },
   "homepage": "https://github.com/tonytoponi/project-lvl1-s478#readme",
   "dependencies": {
+    "hexlet-pairs": "^1.0.8",
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/node": "^7.2.2",
@@ -41,8 +45,6 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.16.0",
-    "hexlet-pairs": "^1.0.8",
-    "readline-sync": "^1.4.9"
+    "eslint-plugin-import": "^2.16.0"
   }
 }

@@ -1,6 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import gameEngine from '../gameEngine';
-import getRandomNumber from '../getRandomNumber';
+import getRandom from '../getRandom';
 
 const getGcd = (a, b) => {
   if (b === 0) {
@@ -10,15 +10,14 @@ const getGcd = (a, b) => {
 };
 
 const getGcdGameData = () => {
-  const value1 = getRandomNumber(0, 100);
-  const value2 = getRandomNumber(0, 100);
+  const value1 = getRandom(0, 100);
+  const value2 = getRandom(0, 100);
   const question = `${value1} ${value2}`;
   const correctAnswer = getGcd(value1, value2).toString();
-  const gameData = cons(question, correctAnswer);
-  return gameData;
+  return cons(question, correctAnswer);
 };
 
 export default () => {
-  const gcdGameRules = 'Find the greatest common divisor of given numbers.';
-  gameEngine(getGcdGameData, gcdGameRules);
+  const gcdGameDescription = 'Find the greatest common divisor of given numbers.';
+  gameEngine(getGcdGameData, gcdGameDescription);
 };
