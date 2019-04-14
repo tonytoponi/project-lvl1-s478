@@ -27,5 +27,5 @@ export default (getGameData, description) => {
       console.log(`Let's try again, ${name}!`);
     }
   };
-  return iteration(0);
+  iteration(0);
 };
